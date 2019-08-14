@@ -1,4 +1,8 @@
 <?php
+/**
+ * @copyright (c) 2013, Pawel Kazakow <support@xonu.de>
+ * @license http://xonu.de/license/ xonu.de EULA
+ */
 
 class Xonu_RoundingErrorFix_Model_Api_Standard extends Mage_Paypal_Model_Api_Standard {
     /**

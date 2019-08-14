@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Xonu_RoundingErrorFix</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
-    <license uri="http://xonu.de/license">xonu.de EULA</license>
+    <license uri="https://xonu.de/license">xonu.de EULA</license>
     <channel>community</channel>
     <extends/>
     <summary>Fixes rounding error in Magento 1.7.x.x and PayPal.</summary>
     <description>There is a rounding error in Magento 1.7. Example: If a product costs 9.99 incl. tax. 19% and shipping is 5.00 these values add up to 15.00 in the cart. The correct value would be 14.99.</description>
     <notes>Fixes rounding error in Magento 1.7.x.x and PayPal.</notes>
     <authors><author><name>Pawel Kazakow</name><user>xonu</user><email>support@xonu.de</email></author></authors>
-    <date>2013-10-08</date>
-    <time>19:04:10</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Xonu_RoundingErrorFix.xml" hash="fc60ed34d31316a139635137222c8442"/></dir></target><target name="magecommunity"><dir name="Xonu"><dir name="RoundingErrorFix"><dir name="Model"><dir name="Api"><file name="Standard.php" hash="530661d1c7de367456acab1efe3df0b0"/></dir><dir name="Sales"><dir name="Order"><file name="Payment.php" hash="d5ec636bc978992d177977d52d9d17eb"/></dir></dir><file name="Store.php" hash="8a16dddbefeedc7a8e24b466d4ce5246"/></dir><dir name="etc"><file name="config.xml" hash="beceed94efe87af4d2f2ee6ca2d3de16"/></dir></dir></dir></target></contents>
+    <date>2013-10-20</date>
+    <time>11:45:29</time>
+    <contents><target name="magecommunity"><dir name="Xonu"><dir name="RoundingErrorFix"><dir name="Model"><dir name="Api"><file name="Standard.php" hash="7b20a014c8b9444796535e899287799f"/></dir><dir name="Sales"><dir name="Order"><file name="Payment.php" hash="d5ec636bc978992d177977d52d9d17eb"/></dir></dir><file name="Store.php" hash="49d8a77771e445ef100860cb65a7cd54"/></dir><dir name="etc"><file name="config.xml" hash="2fca1499d83c2c24db94bd591dc11aaa"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Xonu_RoundingErrorFix.xml" hash="fc60ed34d31316a139635137222c8442"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

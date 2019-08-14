@@ -7,6 +7,17 @@
 
 class Xonu_RoundingErrorFix_Model_Store extends Mage_Core_Model_Store {
 
+    private $classList = array();
+
+    /**
+     * Initialize object
+     */
+    protected function _construct()
+    {
+        $this->classList[] = get_class(Mage::getSingleton('tax/sales_total_quote_subtotal'));
+        parent::_construct();
+    }
+
     /**
      * Round price
      *
@@ -15,7 +26,14 @@ class Xonu_RoundingErrorFix_Model_Store extends Mage_Core_Model_Store {
      */
     public function roundPrice($price)
     {
-        // return round($price, 2); // original code
-        return round($price, 4);
+        $trace = debug_backtrace(); $depth = 2;
+
+        // if(in_array($trace[$depth]['class'], $this->classList))
+        if($trace[$depth]['class'] == $this->classList[0])
+            $precision = 2;
+        else
+            $precision = 4;
+
+        return round($price, $precision);
     }
 }
