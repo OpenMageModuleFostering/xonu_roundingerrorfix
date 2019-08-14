@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Xonu_RoundingErrorFix",
+    "type": "magento-module",
+    "license": "xonu.de-EULA",
+    "homepage": "",
+    "description": "Fixes rounding error in Magento 1.7.x.x and PayPal.",
+    "authors": [
+    {
+        "name": "Pawel Kazakow",
+        "email": "support@xonu.de"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
