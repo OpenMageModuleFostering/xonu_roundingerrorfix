@@ -29,7 +29,7 @@ class Xonu_RoundingErrorFix_Model_Store extends Mage_Core_Model_Store {
         $trace = debug_backtrace(); $depth = 2;
 
         // if(in_array($trace[$depth]['class'], $this->classList))
-        if($trace[$depth]['class'] == $this->classList[0])
+        if(isset($trace[$depth]['class']) && $trace[$depth]['class'] == $this->classList[0])
             $precision = 2;
         else
             $precision = 4;
